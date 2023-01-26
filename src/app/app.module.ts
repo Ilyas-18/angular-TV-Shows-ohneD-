@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { ShowListComponent } from './components/show-list/show-list.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { ShowDataService } from './services/show-data.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, ShowListComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ShowDataService]
 })
 export class AppModule { }

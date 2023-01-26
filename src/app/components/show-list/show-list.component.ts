@@ -7,9 +7,7 @@ import { show } from '../../model/show';
   styleUrls: ['./show-list.component.css']
 })
 export class ShowListComponent implements OnInit {
-  shows: show[ ] = [ ];
   constructor() {
-    this.shows.push(new show(1, 'Paw Patrol'));
    }
 
   ngOnInit() {
