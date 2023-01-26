@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { show } from '../../model/show';
+import { Show } from '../../model/show';
+import { ShowDataService} from '../../services/show-data.service';
 
 @Component({
   selector: 'app-show-list',
@@ -7,7 +8,7 @@ import { show } from '../../model/show';
   styleUrls: ['./show-list.component.css']
 })
 export class ShowListComponent implements OnInit {
-  constructor() {
+  constructor(private showDataService: ShowDataService) {
    }
 
   ngOnInit() {
