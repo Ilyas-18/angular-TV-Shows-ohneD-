@@ -16,7 +16,8 @@ export class ShowFormComponent implements OnInit {
   }
 
   save() {
-    this.showDataService.saveShow(this.show)
+    this.showDataService.saveShow(this.show);
+    this.show = new Show(null, null);
   }
 
 
