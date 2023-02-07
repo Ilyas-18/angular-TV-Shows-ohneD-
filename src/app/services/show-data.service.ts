@@ -11,5 +11,6 @@ export class ShowDataService {
   }
 
   constructor() {  
-    this.shows.push(new Show(1, 'Paw Patrol'));}
+    this.shows.push(new Show(1, 'Paw Patrol'));
   }
+}
